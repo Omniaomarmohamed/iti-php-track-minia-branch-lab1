@@ -1,0 +1,158 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+h1 , h2 , h3 , h4 , h5 ,h6 {
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.bg-dark {
+ background-color: rgba(0, 0, 0, 0.7) !important; 
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; 
+    transition: 0.5s color; 
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #e65f78 !important;
+}
+
+.home {
+    background-image: url(../imgs/header-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+.layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+h1{
+    overflow: hidden;
+}
+h1::after
+{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    animation: typing 3s infinite alternate;
+}
+@keyframes typing {
+    0%{content: "i";}
+    10%{content: "ia";}
+    20%{content: "iam";}
+    30%{content: "iam ";}
+    40%{content: "iam o";}
+    50%{content: "iam om";}
+    60%{content: "iam omn";}
+    70%{content: "iam omni";}
+    75%{content: "iam omnia";}
+    80%{content: "iam omnia ";}
+    85%{content: "iam omnia o";}
+    90%{content: "iam omnia om";}
+    95%{content: "iam omnia oma";}
+    100%{content: "iam omnia omar|";}
+}
+
+ header .btn {
+    color: blanchedalmond;
+    border: 1px solid white;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0 ,0.7);
+}
+.about-caption .deo{
+    color: #e65f78;
+}
+.about-icon span {
+    border: 2px solid rgba(0, 0, 0 ,0.6);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.about-icon span:hover{
+    color: #e65f78;
+    border: 2px solid #e65f78;  
+}
+/* services */
+ .oo{
+    position: relative;
+}
+.oo::after{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 2px;
+    top: 100%;
+    left: 48%;
+    transform: translate(-50%);
+    background-color: #e65f78;
+    transition: 0.5s;
+}
+.service-item:hover .oo::after{
+    width: 30%;
+}
+.service-item i {
+    color: #e65f78;
+    font-size: 3rem;
+}
+
+/* end services */
+.client , .services{
+    background-color: #f8f9fa;
+
+}
+.carousel-indicators li {
+    background-color: #e65f78;
+    height: 10px;
+    width: 35px;  
+}
+.hire-caption .btn{
+    color: #fff;
+    background-color: #e65f78;
+}
+.item-work{
+     position: relative;
+     overflow: hidden;
+}
+.item-work .layer-work{
+    background-color: rgba(0, 0, 0 ,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;   
+}
+.del {
+    position: relative;
+    top: 70%;
+    transition: top 0.5s;
+}
+.item-work:hover .del{
+    top: 0;
+}
+.item-work:hover img{
+    transform: scale(1.3);
+}
+.item-work img {
+    transition: transform 0.5s
+}
+.item-work:hover .layer-work{
+    opacity: 1;
+}
+.item-caption i {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #e65f78;
+}
